@@ -46,6 +46,10 @@
         "Costcenter": "11111111",
         "Project": "AzureDeploy"
       }
+    },
+    "costCenterTag": {
+      "type": "string",
+      "defaultValue": "11111111"
     }
   },
   "resources": [
@@ -54,7 +58,7 @@
       "apiVersion": "2021-06-01",
       "name": "[parameters('storageAccountName')]",
       "location": "[parameters('location')]",
-      "tags": "[parameters('resourceTags')]",
+      "tags": "costcenter: [parameters('costCenterTag')]",
       "sku": {
         "name": "[parameters('storageAccountType')]"
       },
