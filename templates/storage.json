@@ -52,7 +52,7 @@
       "name": "[parameters('storageAccountName')]",
       "location": "[parameters('location')]",
       "tags": {
-        "costcenter: [parameters('costCenterTag')]"
+        "costcenter": "[parameters('costCenterTag')]"
       },
       "sku": {
         "name": "[parameters('storageAccountType')]"
