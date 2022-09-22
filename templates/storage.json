@@ -40,13 +40,6 @@
         "description": "The name of the Storage Account"
       }
     },
-    "resourceTags": {
-      "type": "object",
-      "defaultValue": {
-        "Costcenter": "11111111",
-        "Project": "AzureDeploy"
-      }
-    },
     "costCenterTag": {
       "type": "string",
       "defaultValue": "11111111"
